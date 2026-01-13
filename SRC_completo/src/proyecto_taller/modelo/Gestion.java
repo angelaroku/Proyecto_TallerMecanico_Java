@@ -4,10 +4,10 @@ public class Gestion {
 	private TipoGestion tipogestion;
 
 	public Gestion(TipoGestion tipogestion) {
-		super();
 		this.tipogestion = tipogestion;
 	}
-
+	
+	//GETTER Y SETTER
 	public TipoGestion getTipogestion() {
 		return tipogestion;
 	}
@@ -15,5 +15,4 @@ public class Gestion {
 	public void setTipogestion(TipoGestion tipogestion) {
 		this.tipogestion = tipogestion;
 	}
-	
 }

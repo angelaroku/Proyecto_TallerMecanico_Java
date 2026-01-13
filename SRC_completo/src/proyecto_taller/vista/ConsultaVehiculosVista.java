@@ -5,11 +5,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class ConsultarVehiculosVista extends JPanel{
+public class ConsultaVehiculosVista extends JPanel{
 	private JTextField textFieldConsultarVehiculos;
 	// controlador
 	
-	public ConsultarVehiculosVista() {
+	public ConsultaVehiculosVista() {
 		setLayout(null);
 		//thiis controlador
 		

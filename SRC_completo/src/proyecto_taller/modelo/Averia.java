@@ -8,13 +8,12 @@ public class Averia {
 	
 	
 	public Averia(int codigoAveria, String descripcionAveria, float costeAveria) {
-		super();
 		this.codigoAveria = codigoAveria;
 		this.descripcionAveria = descripcionAveria;
 		this.costeAveria = costeAveria;
 	}
 
-	
+	//GETTER Y SETTERS
 	public int getCodigoAveria() {
 		return codigoAveria;
 	}

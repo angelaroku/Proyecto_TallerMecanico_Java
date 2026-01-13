@@ -17,6 +17,10 @@ public class DAO_TallerMecanico {
 		}
 		return instancia;
 	}
+	//METODOS CRUD enlazados con modelo "MenuTallerMecanico"
 	
-
+	
+	
+	//
+	
 }

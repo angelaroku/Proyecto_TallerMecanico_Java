@@ -14,12 +14,12 @@ import proyecto_taller.vista.AltaVehiculosVista;
 import proyecto_taller.vista.BajaAveriasVista;
 import proyecto_taller.vista.BajaMecanicosVista;
 import proyecto_taller.vista.BajaVehiculosVista;
-import proyecto_taller.vista.ConsultarAveriasVista;
-import proyecto_taller.vista.ConsultarMecanicosVista;
-import proyecto_taller.vista.ConsultarVehiculosVista;
-import proyecto_taller.vista.ModificarAveriasVista;
-import proyecto_taller.vista.ModificarMecanicosVista;
-import proyecto_taller.vista.ModificarVehiculosVista;
+import proyecto_taller.vista.ConsultaAveriasVista;
+import proyecto_taller.vista.ConsultaMecanicosVista;
+import proyecto_taller.vista.ConsultaVehiculosVista;
+import proyecto_taller.vista.ModificacionAveriasVista;
+import proyecto_taller.vista.ModificacionMecanicosVista;
+import proyecto_taller.vista.ModificacionVehiculosVista;
 
 public class MenuGenTallerMecanico extends JFrame implements ActionListener {
 
@@ -151,12 +151,12 @@ public class MenuGenTallerMecanico extends JFrame implements ActionListener {
 			
 		} else if (e.getSource()==mntmNewMenuItemConsultaVehiculos) {
 			System.out.println("Pantalla Consulta Vehículos");
-			this.setContentPane(new ConsultarVehiculosVista());
+			this.setContentPane(new ConsultaVehiculosVista());
 			setVisible(true);
 			
 		} else if (e.getSource()==mntmModificarVehiculos) {
 			System.out.println("Pantalla Modificar Vehiculos");
-			this.setContentPane(new ModificarVehiculosVista());
+			this.setContentPane(new ModificacionVehiculosVista());
 			setVisible(true);
 			
 		}
@@ -175,12 +175,12 @@ public class MenuGenTallerMecanico extends JFrame implements ActionListener {
 			
 		} else if (e.getSource()==mntmNewMenuItemConsultaMecanicos) {
 			System.out.println("Pantalla Consulta Mecanicos");
-			this.setContentPane(new ConsultarMecanicosVista());
+			this.setContentPane(new ConsultaMecanicosVista());
 			setVisible(true);
 			
 		} else if (e.getSource()==mntmNewMenuItemModificarMecanicos) {
 			System.out.println("Pantalla Modificar Mecanicos");
-			this.setContentPane(new ModificarMecanicosVista());
+			this.setContentPane(new ModificacionMecanicosVista());
 			setVisible(true);
 		}
 		
@@ -199,12 +199,12 @@ public class MenuGenTallerMecanico extends JFrame implements ActionListener {
 			
 		} else if (e.getSource()==mntmConsultarAverias) {
 			System.out.println("Pantalla Consulta Averías");
-			this.setContentPane(new ConsultarAveriasVista());
+			this.setContentPane(new ConsultaAveriasVista());
 			setVisible(true);
 			
 		} else if (e.getSource()==mntmModificarAverias) {
 			System.out.println("Pantalla Modificar Averías");
-			this.setContentPane(new ModificarAveriasVista());
+			this.setContentPane(new ModificacionAveriasVista());
 			setVisible(true);
 		}
 		

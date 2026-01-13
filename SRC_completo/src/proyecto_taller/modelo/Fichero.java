@@ -10,6 +10,7 @@ public class Fichero {
 		this.tipoFichero = tipoFichero;
 	}
 
+	//GETTER Y SETTER
 	public String getNombreFichero() {
 		return nombreFichero;
 	}

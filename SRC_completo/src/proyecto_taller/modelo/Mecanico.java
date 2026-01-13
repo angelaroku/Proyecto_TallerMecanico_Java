@@ -7,6 +7,7 @@ public class Mecanico {
 	private EspecialidadMecanico especialidadMecanico;
 	private boolean estadoLibreMecanico; 
 	
+	
 	public Mecanico(int codigoMecanico, String nombreMecanico, 
 			EspecialidadMecanico especialidadMecanico, boolean estadoLibreMecanico) {
 		this.codigoMecanico = codigoMecanico;
@@ -18,6 +19,8 @@ public class Mecanico {
 	
 	//Un mecánico que esté ocupado solo puede trabajar en la reparación de un único vehículo
 	
+	
+	//GETTER Y SETTERS
 	public int getCodigoMecanico() {
 		return codigoMecanico;
 	}

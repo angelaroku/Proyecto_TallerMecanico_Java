@@ -11,7 +11,7 @@ import javax.swing.JTree;
 import javax.swing.JComboBox;
 import javax.swing.JProgressBar;
 
-public class ModificarVehiculosVista extends JPanel{
+public class ModificacionVehiculosVista extends JPanel{
 	private JTextField textFieldModificarVehiculos;
 	private JRadioButton rdbtnNewRadioButtonModificarEstadoEnReparacion ;
 	private JRadioButton rdbtnNewRadioButtonModificarEstadoEnEspera;
@@ -21,7 +21,7 @@ public class ModificarVehiculosVista extends JPanel{
 	private JRadioButton rdbtnNewRadioButtonModificarTipoMoto;
  
 	// controlador
-	public ModificarVehiculosVista() {
+	public ModificacionVehiculosVista() {
 		setLayout(null);
 		//thiis controlador
 		

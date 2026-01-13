@@ -18,25 +18,26 @@ import javax.swing.JButton;
 public class AltaVehiculosVista extends JPanel {
 	private JTextField textFieldMatriculaVehiculo;
 	private JTextField textFieldCodigoVAveria;
-	private JTextField textFieldDescripcionVAveris;
+	private JTextField textFieldDescripcionVAveria;
 	private JTextField textFieldCosteVAveria;
 	
 	private AltaVehiculosControlador controlador;
 	private JButton btnNewButtonAltaVehiculo;
 	
-	private AltaVehiculosControlador controladorTaller;
+	private MenuTallerMecanicoControlador controladorMenuTaller;
 	private JButton btnNewButtonVolverInicio;
 	
 	public  AltaVehiculosVista () {
 		setLayout(null);
 		controlador=new AltaVehiculosControlador(this);
-		controladorTaller=new AltaVehiculosControlador(this);
+		controladorMenuTaller=new MenuTallerMecanicoControlador(this);
 
 		
 		btnNewButtonVolverInicio = new JButton("< Volver    ");
 		btnNewButtonVolverInicio.setBounds(23, 11, 119, 23);
 		add(btnNewButtonVolverInicio);
-		btnNewButtonVolverInicio.addActionListener(controladorTaller);
+		//conexion de boton con controlador de pantalla inicio
+		btnNewButtonVolverInicio.addActionListener(controladorMenuTaller);
 		
 		JLabel lblNewLabelTitleAltaVehiculo = new JLabel("Alta Vehiculos");
 		lblNewLabelTitleAltaVehiculo.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -97,10 +98,10 @@ public class AltaVehiculosVista extends JPanel {
 		lblNewLabelDescripcionAveria.setBounds(138, 371, 94, 14);
 		add(lblNewLabelDescripcionAveria);
 		
-		textFieldDescripcionVAveris = new JTextField();
-		textFieldDescripcionVAveris.setBounds(215, 368, 151, 20);
-		add(textFieldDescripcionVAveris);
-		textFieldDescripcionVAveris.setColumns(10);
+		textFieldDescripcionVAveria = new JTextField();
+		textFieldDescripcionVAveria.setBounds(215, 368, 151, 20);
+		add(textFieldDescripcionVAveria);
+		textFieldDescripcionVAveria.setColumns(10);
 		
 		JLabel lblNewLabelCosteAveria = new JLabel("Coste:  ");
 		lblNewLabelCosteAveria.setBounds(138, 403, 83, 14);
@@ -144,19 +145,6 @@ public class AltaVehiculosVista extends JPanel {
 	public boolean getButton() {
 		return btnNewButtonVolverInicio.getAutoscrolls();
 	}
-	
-	public boolean volverInicioVehiculoVista( ) {
-		if (btnNewButtonVolverInicio != null) 
-					return true;
-		else
-			return false;
-		
-	}
-	
-	
-	
-	
-	
 }
 
 
