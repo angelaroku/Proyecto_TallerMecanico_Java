@@ -6,11 +6,12 @@ package $notas;
 			Fichero[ ], Gestion[ ]
 		
 		- Generar documentos vistas
-			GENprincipal[+], Averia [ ], Mecanico [ ], Vehiculo [ ]
+			GENprincipal[+], Averia [+], Mecanico [+], Vehiculo [+] ,
+			Ficheros [+], Gestiones [+]
 		
-		- generar documentos controladores
+		- generar documentos controladores(revisar)
 			Averia [ ,falta actionPerform], 
-			Mecanico [ ,falta actionPerform], Vehiculo [ ,falta actionPerform]
+			Mecanico [+,falta actionPerform], Vehiculo [+,falta actionPerform]
 		
 		- CONECTAR vista - contolador
 			Averia [ ], Mecanico [ ], Vehiculo [ ]
